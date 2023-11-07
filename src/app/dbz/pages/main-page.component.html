@@ -1,0 +1,18 @@
+<h1>dbz component</h1>
+
+<hr>
+
+<div class="row">
+  <div class="col">
+
+    <!-- <dbz-list [characterList]="characters" (onDelete)="onDeleteCharacter($event)"></dbz-list> -->
+
+    <lista-deudores [deudoresList]="deudores" (deleteDeudor)="onDeleteDeudor($event)"></lista-deudores>
+
+  </div>
+
+  <div class="col">
+    <!-- <dbz-add-character (onNewCharacter)="onNewCharacter($event)"></dbz-add-character> -->
+    <app-add-deudor (addDeudor)="addDeudor($event)"></app-add-deudor>
+  </div>
+</div>

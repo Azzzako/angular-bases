@@ -1,0 +1,23 @@
+<h4>Agregar deudor</h4>
+<form class="row" (submit)="emitDeudor()">
+  <input
+  type="text"
+  [(ngModel)]="deudor.nombre"
+  name="nombre"
+  placeholder="Nombre del deudor"
+  class="mb-2">
+
+  <input
+  type="number"
+  [(ngModel)]="deudor.monto"
+  name="power"
+  placeholder="Monto que adeuda"
+  class="mb-2">
+
+  <button
+  type="submit"
+  class="btn btn-primary"
+  >Agregar</button>
+
+  <!-- <pre>{{deudor | json}}</pre> -->
+</form>
