@@ -4,7 +4,7 @@
   let i = index;
   let isEven = even;
   let isLast = last;
-  let isOdd = odd
+  let isOdd = odd;
   " class="list-group-item d-flex justify-content-between align-items-center" [ngClass]="{'list-group-item-success': isLast,
     'list-group-item-dark' : isOdd
 }">
@@ -14,6 +14,6 @@
     </div>
 
 
-    <button class="btn btn-danger" (click)="deleteDeudorByIndex(i)">X</button>
+    <button class="btn btn-danger" (click)="deleteDeudorById(deudor.id!)">X</button>
   </li>
 </ul>

@@ -11,9 +11,9 @@ export class ListaDeudoresComponent {
   public deudoresList: Deudores[] = []
 
   @Output()
-  deleteDeudor: EventEmitter<number> = new EventEmitter()
+  deleteDeudor: EventEmitter<string> = new EventEmitter()
 
-  deleteDeudorByIndex(index: number):void{
-    this.deleteDeudor.emit(index)
+  deleteDeudorById(id: string):void{
+    this.deleteDeudor.emit(id)
   }
 }
